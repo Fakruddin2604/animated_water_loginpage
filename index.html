@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Animated &amp; Transparent Login Form with Water Effect</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+    <body class="water" onload="scale_in()" ;>
+        <div class="main">
+            <!-- Login Form -->
+            <div class="container-fluid container_form scale-in-center" id="form">
+                <div class="row">
+                    <div class="col-sm-4 col-md-2 col-lg-4"></div>
+
+                    <div class="col-sm-4 col-md-8 col-lg-4">
+                        <div class="general_container">
+                            <div class="row cent title_div">
+                                <div class="col-md-12 tracking-in-expand-fwd">
+                                    <h1>Inside Water</h1>
+                                </div>
+                            </div>
+
+                            <form method="post" action="index.php">
+                                <div class="form-group email_div">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-
+                                        describedby="emailHelp" placeholder="Enter email" autocomplete="off" required />
+                                </div>
+
+                                <div class="form-group psw_div">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Password" autocomplete="off" required />
+                                </div>
+
+                                <div class="col-md-12 check_div cent">
+                                    <div class="form-check chickyboxes">
+                                        <input type="checkbox" id="box-1" required />
+                                        <label for="box-1">Remember Me</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 btn_div cent">
+                                    <button type="submit" class="btn btn-primary btn_signIn">
+                                        Sign In
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-2 col-lg-4"></div>
+                </div>
+            </div>
+
+            <div class="user_div noselect" id="user_div">
+                <img src="4.png" alt="user icon" id="user" onclick="Login(); scale_out()" class="noselect" />
+            </div>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
